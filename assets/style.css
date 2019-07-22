@@ -1,0 +1,10 @@
+body{
+    background-image: url("images/wormhole-739872_960_720.png");
+}
+#form1{
+    position: sticky;
+}
+div{
+    display: inline-block;
+    color: white;
+}
