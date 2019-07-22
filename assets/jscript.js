@@ -21,11 +21,12 @@ $("#submit").on("click", function(event){
     renderButtons();
 })
 renderButtons();
+var i = 0;
 function renderEverything(){
 $(".items").on("click", function(){
     $("#gifs").empty();
     search = $(this).attr("val");
-    queryURL = "https://api.giphy.com/v1/gifs/search?api_key=oJuYfG7XhZfnbNJ03PVQbwL00bCQSXDj&limit=10&q="
+    queryURL = "https://api.giphy.com/v1/gifs/search?api_key=oJuYfG7XhZfnbNJ03PVQbwL00bCQSXDj&limit=10&q=";
     $.ajax({
         url: queryURL + search,
         method: "GET"
