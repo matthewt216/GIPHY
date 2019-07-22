@@ -9,6 +9,7 @@ function renderButtons(){
         b.attr("val", topics[i]);
         b.text(topics[i]);
         $("#buttons").append(b);
+        $("#buttons").append(" ");
     }
 }
 $("#submit").on("click", function(event){
